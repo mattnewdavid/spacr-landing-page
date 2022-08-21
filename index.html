@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>SpacR - Welcome to the Future</title>
+  </head>
+  <body>
+    <div class="hero-section">
+      <nav>
+        <div class="nav-logo">
+          <i class="fa-solid fa-rocket"></i>&nbsp; SpacR
+        </div>
+        <button>Contact</button>
+      </nav>
+
+      <div class="hero-content">
+        <h1>
+          Welcome to an<br />
+          Interesting <br />Future
+        </h1>
+        <button>Explore Our Space <i class="fa fa-arrow-right"></i></button>
+      </div>
+      <aside>
+        <div class="nav-icons">
+          <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <ul class="side-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </ul>
+      </aside>
+      <div class="arrow"><i class="fa fa-arrow-down"></i></div>
+      <div class="scan-qr">
+        <small>Scan to sign-up</small>
+        <img class="qr-image" src="qr-code.png" />
+      </div>
+    </div>
+    <footer>
+      <h3>Let's make you a Space Freak!</h3>
+      <form>
+        <input type="text" placeholder="Let's start with your mail!" />
+        <button>Go!</button>
+      </form>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/ba57058827.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script>
+      gsap.from(".hero-content", { duration: 2, x: -100, opacity: 0 });
+      gsap.from(".scan-qr", { duration: 5, y: -100, ease: "elastic" });
+    </script>
+  </body>
+</html>
